@@ -53,5 +53,11 @@ public class AcademicRecordTest {
         ar.addSemester(semesterTwo);
 
         assertEquals(3.27, ar.getCumulativeGPA(), 0.01);
+
+        //now, see if clearing them all will result in 0.
+
+        ar.ClearAcademicRecord();
+
+        assertEquals(0, ar.getCumulativeGPA(), 0.0);
     }
 }

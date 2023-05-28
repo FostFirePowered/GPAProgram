@@ -49,6 +49,13 @@ public class SemesterTest {
 
         assertEquals(3.35, semesterOne.getSemesterGPA(),0.01);
 
+        //then, test to make sure the GPA is 0 when we remove all of these semesters.
+
+        semesterOne.removeAllCourses();
+
+        assertEquals(0, semesterOne.getSemesterGPA(), 0);
+
 
     }
+
 }

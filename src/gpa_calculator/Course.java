@@ -2,10 +2,15 @@ package gpa_calculator;
 
 import GPACalcExceptions.CreditValueException;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Course {
 
     private double numCredits;
     private LetterGrade letterGrade;
+
+    private final List<GPAObserver> observerList;
 
     private double gpa;
 
@@ -14,6 +19,8 @@ public class Course {
     public Course(String courseName, LetterGrade letterGrade, int numCredits){
         this.courseName = courseName;
         this.letterGrade = letterGrade;
+
+        observerList = new ArrayList<GPAObserver>();
 
         try{
             validateNumCredits(numCredits);
@@ -75,6 +82,22 @@ public class Course {
 
     public double getNumCredits(){
         return numCredits;
+    }
+
+    public void addObserver(GPAObserver observer){
+        observerList.add(observer);
+        observer.updateGPA();
+    }
+
+    public void removeObserver(GPAObserver observerToRemove){
+        observerList.remove(observerToRemove);
+        observerToRemove.updateGPA();
+    }
+
+    public void notifyObservers(){
+        for(GPAObserver observer : observerList){
+            observer.updateGPA();
+        }
     }
 
 

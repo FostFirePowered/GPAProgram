@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e7fc0cf-f1dd-4e8e-aca7-0f26581620b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GPAProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GPACalcExceptions/CreditValueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gpa_calculator/AcademicRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gpa_calculator/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gpa_calculator/GradeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gpa_calculator/LetterGrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gpa_calculator/Semester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/AcademicRecordTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/GradeConverterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/SemesterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gpa_calculator/GPAObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gpa_calculator/AcademicRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpa_calculator/AcademicRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gpa_calculator/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpa_calculator/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gpa_calculator/Semester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpa_calculator/Semester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/AcademicRecordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/AcademicRecordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/SemesterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/SemesterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +24,17 @@
         <option value="Enum" />
         <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="FostFirePowered" />
+        <option value="F" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -81,36 +78,26 @@
       <option name="presentableId" value="Default" />
       <updated>1684978976174</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added the bulk of basic core functionality. The next step is to further test the methods and explore the CLI interface display.">
+      <created>1685149927521</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685149927521</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added the bulk of basic core functionality. The next step is to further test the methods and explore the CLI interface display." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the bulk of basic core functionality. The next step is to further test the methods and explore the CLI interface display." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/gpa_calculator/Semester.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/gpa_calculator/Semester.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/gpa_calculator/Semester.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/gpa_calculator/Semester.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/gpa_calculator/Semester.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tests/SemesterTest.java</url>
           <line>34</line>
@@ -137,14 +124,34 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/gpa_calculator/Semester.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/src/tests/SemesterTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/gpa_calculator/Semester.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/src/tests/SemesterTest.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/SemesterTest.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/SemesterTest.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/AcademicRecordTest.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/AcademicRecordTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
