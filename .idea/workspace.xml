@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e7fc0cf-f1dd-4e8e-aca7-0f26581620b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gpa_calculator/GPAObserver.java" afterDir="false" />
+    <list default="true" id="9e7fc0cf-f1dd-4e8e-aca7-0f26581620b1" name="Changes" comment="Added Observer Pattern functionality for easy updates of cumulative GPA. The next step is further testing and beginning the CLI for a base app.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gpa_calculator/AcademicRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpa_calculator/AcademicRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gpa_calculator/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpa_calculator/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gpa_calculator/Semester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gpa_calculator/Semester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/AcademicRecordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/AcademicRecordTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/SemesterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/SemesterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +30,7 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -85,15 +80,49 @@
       <option name="project" value="LOCAL" />
       <updated>1685149927521</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Observer Pattern functionality for easy updates of cumulative GPA. The next step is further testing and beginning the CLI for a base app.">
+      <created>1685240683707</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685240683707</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="addObserverPattern" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added the bulk of basic core functionality. The next step is to further test the methods and explore the CLI interface display." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the bulk of basic core functionality. The next step is to further test the methods and explore the CLI interface display." />
+    <MESSAGE value="Added Observer Pattern functionality for easy updates of cumulative GPA. The next step is further testing and beginning the CLI for a base app." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Observer Pattern functionality for easy updates of cumulative GPA. The next step is further testing and beginning the CLI for a base app." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -152,6 +181,40 @@
           <url>file://$PROJECT_DIR$/src/tests/AcademicRecordTest.java</url>
           <line>60</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gpa_calculator/AcademicRecord.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gpa_calculator/AcademicRecord.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gpa_calculator/AcademicRecord.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gpa_calculator/AcademicRecord.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gpa_calculator/AcademicRecord.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/gpa_calculator/AcademicRecord.java</url>
+          <line>22</line>
+          <properties class="gpa_calculator.AcademicRecord" method="removeSemester">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
